@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="caixa">
+                <img src="imagens/cadeado.png" alt="logo do encriptador">
+                <p>Encriptador de textos</p>
+            </div>
+            
+        </header>
+        
+       <main>
+            <section class="entrada-texto">
+
+                <textarea class="entrada" placeholder="Digite seu texto"></textarea>
+
+                <div class="aviso-letras">
+                    <img class="exclamacao" src="imagens/Vector!.png">
+                    <p class="aviso">Apenas letras maiúsculas e sem acento.</p>
+                </div>
+
+                <div class="botoes">
+                    <button class="encriptar" onclick="btnEncriptar()">Criptografar</button>
+                    <button class="desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+                </div>
+            </section>
+
+            <section class="texto-encriptado">
+                <textarea class="resultado-texto" id="texto"></textarea>
+
+                <div class="div-copiar">
+                    <button class="btn-copiar" id="button" onclick="copiarTexto()">Copiar</button>
+                </div>
+
+            </section>
+
+       </main>
+
+       <footer>
+
+            <p> Desenvolvido por Tássia Santos - 2022</p>
+            <p>Copyrigth &copy; todos os direitos reservados.</p>
+            <p><a href="http://github.com/tassiasantos"><img src=imagens/github.png></a>
+                <a href="http://www.linkedin.com/in/tassiasantos/"><img src=imagens/likedin.png></a>
+                </p>
+
+
+       </footer>
+
+       <script src="script.js"></script>
+        
+
+    </body>
+
+</html>
